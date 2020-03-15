@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 
 // Create React Component
-const App = function(){
+const App = () =>{
     return <div>Hi There!</div>;
 }
 
@@ -12,4 +12,4 @@ const App = function(){
 ReactDom.render(
     <App />,
     document.querySelector('#root')
-)
+);
