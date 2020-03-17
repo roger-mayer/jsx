@@ -3,12 +3,25 @@ import React from 'react';
 import ReactDom from 'react-dom';
 
 // Create React Component
+
 const App = () =>{
+    const buttonText = 'Click Me';
+    const labelText = 'Enter Name: ';
+    function getTime() {
+        return (new Date()).toLocaleTimeString()
+    }
     return (
         <div>
-        <label htmlFor="name">Enter Name</label>
+        <label className="label" htmlFor="name">
+            {labelText}
+        </label>
         <input id="name" type="text"/>
-        <button style={{backgroundColor: 'blue', color:'white'}}>Submit</button>
+        <button style={{backgroundColor: 'blue', color:'white'}}>
+            {buttonText}
+        </button>
+            <br/><br/>
+                <div><h3> Current Time: {getTime()}</h3>
+                </div>
     </div>)
 };
 
