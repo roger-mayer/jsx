@@ -24,7 +24,7 @@ const App = () =>{
                 </div>
     </div>)
 };
-//test
+
 
 // Take React Component and show on screen
 ReactDom.render(
